@@ -1,0 +1,6 @@
+framework module GenericCellControllers {
+  umbrella header "GenericCellControllers-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+PODS:
+  - GenericCellControllers (1.1.0)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+
+DEPENDENCIES:
+  - GenericCellControllers
+  - SDWebImage (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - GenericCellControllers
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  GenericCellControllers: dfb84b8f74ed40fc85bba4bd9c0b2e0780fa6258
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+
+PODFILE CHECKSUM: 382e0f21a06068221bb886ffcfbf1918f320fb62
+
+COCOAPODS: 1.10.1

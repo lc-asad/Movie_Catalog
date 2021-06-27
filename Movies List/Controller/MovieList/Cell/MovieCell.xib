@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MovieCell" customModule="Movies_List" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WaR-Ty-Vrd">
+                    <rect key="frame" x="0.0" y="0.0" width="186.5" height="137"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hk2-KJ-ZeB">
+                    <rect key="frame" x="202.5" y="8" width="203.5" height="124"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcd-1Q-RY9">
+                    <rect key="frame" x="0.0" y="139" width="414" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="5Lb-9h-wX3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Hk2-KJ-ZeB" secondAttribute="bottom" constant="8" id="2AM-Ld-dGE"/>
+                <constraint firstItem="WaR-Ty-Vrd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="3D1-Ft-uMQ"/>
+                <constraint firstItem="Hk2-KJ-ZeB" firstAttribute="leading" secondItem="WaR-Ty-Vrd" secondAttribute="trailing" constant="16" id="Nos-w8-Bv7">
+                    <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                </constraint>
+                <constraint firstItem="WaR-Ty-Vrd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PGx-e4-kbc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Bcd-1Q-RY9" secondAttribute="trailing" id="Qfr-yT-OUz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Hk2-KJ-ZeB" secondAttribute="trailing" constant="8" id="Upm-LF-pLx"/>
+                <constraint firstItem="Bcd-1Q-RY9" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="auR-vd-nGe"/>
+                <constraint firstItem="Bcd-1Q-RY9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dTs-hz-QSF"/>
+                <constraint firstItem="Hk2-KJ-ZeB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="p1y-n2-umX"/>
+                <constraint firstItem="Bcd-1Q-RY9" firstAttribute="top" secondItem="WaR-Ty-Vrd" secondAttribute="bottom" constant="2" id="xv8-jY-iRp"/>
+                <constraint firstItem="WaR-Ty-Vrd" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.45" id="yUk-GE-TdE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblTitle" destination="Hk2-KJ-ZeB" id="cHn-na-ayl"/>
+                <outlet property="movie_imageView" destination="WaR-Ty-Vrd" id="1V9-rn-esJ"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="126.5625"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
